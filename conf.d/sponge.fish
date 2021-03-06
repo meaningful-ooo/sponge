@@ -11,14 +11,14 @@ if not set --query --universal sponge_filters
   set --universal sponge_filters sponge_filter_failed sponge_filter_matched
 end
 
-# Consider `0` the only successful exit code by default
-if not set --query --universal sponge_successful_exit_codes
-  set --universal sponge_successful_exit_codes 0
-end
-
 # Don't filter out commands that already have been in the history by default
 if not set --query --universal sponge_allow_previously_successful
   set --universal sponge_allow_previously_successful true
+end
+
+# Consider `0` the only successful exit code by default
+if not set --query --universal sponge_successful_exit_codes
+  set --universal sponge_successful_exit_codes 0
 end
 
 # No active regex patterns by default
@@ -39,7 +39,7 @@ function _sponge_uninstall --on-event sponge_uninstall
   set --erase sponge_version
   set --erase --universal sponge_delay
   set --erase --universal sponge_filters
-  set --erase --universal sponge_successful_exit_codes
   set --erase --universal sponge_allow_previously_successful
+  set --erase --universal sponge_successful_exit_codes
   set --erase --universal sponge_regex_patterns
 end
