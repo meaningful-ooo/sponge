@@ -33,6 +33,13 @@ functions --query \
   _sponge_on_postexec \
   _sponge_on_exit
 
+# Initialize empty state for the first run
+function _sponge_install --on-event sponge_install
+  set --global _sponge_current_command ''
+  set --global _sponge_current_command_exit_code 0
+  set --global _sponge_current_command_previously_in_history false
+end
+
 # Uninstaller
 function _sponge_uninstall --on-event sponge_uninstall
   _sponge_clear_state
