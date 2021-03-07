@@ -40,7 +40,7 @@ function _sponge_install --on-event sponge_install
   set --global _sponge_current_command_previously_in_history false
 end
 
-# Uninstaller
+# Clean up variables
 function _sponge_uninstall --on-event sponge_uninstall
   _sponge_clear_state
   set --erase sponge_version
