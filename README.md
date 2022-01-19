@@ -70,9 +70,9 @@ set sponge_delay 5
 
 ### Custom filters
 
-Sponge filters commands by invoking an array of _filters._ You can plug into this mechanism by defining your own filters.
+Sponge works by invoking an array of _filters_. You can plug into this mechanism by defining your own filters.
 
-Filter is simply a function with specific call signature:
+Filter is simply a function with a specific call signature:
 
 | **Argument** | **Name**                | **Description**                                                                 |
 | ------------ | ----------------------- | ------------------------------------------------------------------------------- |
@@ -80,13 +80,13 @@ Filter is simply a function with specific call signature:
 | 2            | `exit_code`             | The exit code of the command                                                    |
 | 3            | `previously_in_history` | `true` or `false` flag indicating if the command has been in the history before |
 
-Return with exit status `0` to filter out the command and anything else to keep the command in the history.
+Return with exit status `0` to filter out provided command and anything else to keep the command in the history.
 
 You can define your filter in `config.fish` or as a standalone function in fish `functions` folder.
 
 > Be mindful of what you put in filters, as they are run synchronously after each command execution and can slow down your prompt in case of compute-intensive tasks or network requests.
 
-After that you need to register it with Sponge by adding the filter name in `sponge_filters` variable:
+After that you need to register your filter with Sponge by adding its name in `sponge_filters` variable:
 
 ```fish
 set --append sponge_filters my_awesome_filter
