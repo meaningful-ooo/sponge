@@ -4,7 +4,7 @@ function _sponge_on_preexec --on-event fish_preexec \
 
   set --global _sponge_current_command $command
 
-  history search --case-sensitive --exact --max=1 --null $command \
+  builtin history search --case-sensitive --exact --max=1 --null $command \
     | read --local --null found_entries
 
   # If a command is in the history and in the queue, ignore it, like if it wasn’t in the history
