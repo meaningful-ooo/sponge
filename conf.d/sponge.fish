@@ -44,9 +44,4 @@ end
 function _sponge_uninstall --on-event sponge_uninstall
   _sponge_clear_state
   set --erase sponge_version
-  set --erase --universal sponge_delay
-  set --erase --universal sponge_filters
-  set --erase --universal sponge_allow_previously_successful
-  set --erase --universal sponge_successful_exit_codes
-  set --erase --universal sponge_regex_patterns
 end
