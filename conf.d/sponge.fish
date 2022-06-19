@@ -1,5 +1,5 @@
 # Sponge version
-set --global sponge_version 1.0.3
+set --global sponge_version 1.0.4
 
 # Allow to repeat previous command by default
 if not set --query --universal sponge_delay
