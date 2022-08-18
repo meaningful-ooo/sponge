@@ -1,4 +1,4 @@
-# Sponge [![Releases](https://img.shields.io/github/release/andreiborisov/sponge.svg?label=&color=%23ffffff)](https://github.com/andreiborisov/sponge/releases/latest)
+# Sponge [![Releases](https://img.shields.io/github/release/meaningful-ooo/sponge.svg?label=&color=%23ffffff)](https://github.com/meaningful-ooo/sponge/releases/latest)
 
 <div align="center">
 
@@ -17,7 +17,7 @@ Sponge quietly runs in the background and keeps your shell history clean from ty
 Install with [Fisher](https://github.com/jorgebucaran/fisher):
 
 ```fish
-fisher install andreiborisov/sponge
+fisher install meaningful-ooo/sponge
 ```
 
 ### System requirements
@@ -94,8 +94,8 @@ set --append sponge_filters my_awesome_filter
 
 Make sure to append `sponge_filters` like in the example above unless you want to disable the built in filters:
 
-- [`sponge_filter_failed`](https://github.com/andreiborisov/sponge/blob/main/functions/sponge_filter_failed.fish) filters by command exit code
-- [`sponge_filter_matched`](https://github.com/andreiborisov/sponge/blob/main/functions/sponge_filter_matched.fish) filters using regex patterns
+- [`sponge_filter_failed`](https://github.com/meaningful-ooo/sponge/blob/main/functions/sponge_filter_failed.fish) filters by command exit code
+- [`sponge_filter_matched`](https://github.com/meaningful-ooo/sponge/blob/main/functions/sponge_filter_matched.fish) filters using regex patterns
 
 ## License
 
