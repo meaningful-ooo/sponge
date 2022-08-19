@@ -100,3 +100,9 @@ Make sure to append `sponge_filters` like in the example above unless you want t
 ## License
 
 [MIT](LICENSE)
+
+# Meaningful
+
+We are 🏴‍☠️ 🏰 💎 first ever blockchain state.
+
+[More](https://meaningful.ooo).
