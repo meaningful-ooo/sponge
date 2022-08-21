@@ -1,4 +1,4 @@
-# Sponge [![Releases](https://img.shields.io/github/release/meaningful-ooo/sponge.svg?label=&color=%23ffffff)](https://github.com/meaningful-ooo/sponge/releases/latest)
+# 🧽 Sponge [![Releases](https://img.shields.io/github/release/meaningful-ooo/sponge.svg?label=&color=%23ffffff)](https://github.com/meaningful-ooo/sponge/releases/latest)
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 
 Sponge quietly runs in the background and keeps your shell history clean from typos, incorrectly used commands and everything you don't want to store due to privacy reasons.
 
-## Installation
+## 💾 Installation
 
 Install with [Fisher](https://github.com/jorgebucaran/fisher):
 
@@ -20,11 +20,11 @@ Install with [Fisher](https://github.com/jorgebucaran/fisher):
 fisher install meaningful-ooo/sponge
 ```
 
-### System requirements
+### 🤖 System requirements
 
 - [fish](http://fishshell.com) 3.2+
 
-## Usage
+## 🕹️ Usage
 
 Just use your shell as usual and enjoy typos-free history😎
 
@@ -36,9 +36,9 @@ Sponge will automatically filter out all failed commands unless they have been i
 history clear
 ```
 
-## Settings
+## ⚙️ Settings
 
-### Filter failed
+### 💩 Filter failed
 
 By default Sponge will filter out all commands that don’t have `0` as an exit code. You can tweak which exit codes Sponge considers successful with `sponge_successful_exit_codes` variable:
 
@@ -52,7 +52,7 @@ If you wish to filter out all failed commands regardless of whether they already
 set sponge_allow_previously_successful false
 ```
 
-### Filter by regex
+### 🕵🏻 Filter by regex
 
 You can use the full power of regular expressions to filter out unwanted commands. Set `sponge_regex_patterns` variable and everything matched will be kept away from the history. For example, to filter out every command that contains IPv4 address, type:
 
@@ -60,7 +60,7 @@ You can use the full power of regular expressions to filter out unwanted command
 set sponge_regex_patterns '(?:\d{1,3}\.){3}\d{1,3}'
 ```
 
-### Adjusting delay
+### 🦥 Adjusting delay
 
 By default Sponge delays deleting of filtered command so you can always access the last 2 history entries. If you want to remove commands immediately or increase the delay, change `sponge_delay` variable:
 
@@ -68,7 +68,7 @@ By default Sponge delays deleting of filtered command so you can always access t
 set sponge_delay 5
 ```
 
-### Custom filters
+### 🤓 Custom filters
 
 Sponge works by invoking an array of _filters_. You can plug into this mechanism by defining your own filters.
 
@@ -97,12 +97,10 @@ Make sure to append `sponge_filters` like in the example above unless you want t
 - [`sponge_filter_failed`](https://github.com/meaningful-ooo/sponge/blob/main/functions/sponge_filter_failed.fish) filters by command exit code
 - [`sponge_filter_matched`](https://github.com/meaningful-ooo/sponge/blob/main/functions/sponge_filter_matched.fish) filters using regex patterns
 
-## License
+## ©️ License
 
 [MIT](LICENSE)
 
-# Meaningful
+# 🏴‍☠️ 🏰 💎 Meaningful
 
-We are 🏴‍☠️ 🏰 💎 first ever blockchain state.
-
-[More](https://meaningful.ooo).
+We are the first ever blockchain state. [More](https://meaningful.ooo).
