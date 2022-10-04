@@ -62,11 +62,21 @@ set sponge_regex_patterns '(?:\d{1,3}\.){3}\d{1,3}'
 
 ### 🦥 Adjusting delay
 
-By default Sponge delays deleting of filtered command so you can always access the last 2 history entries. If you want to remove commands immediately or increase the delay, change `sponge_delay` variable:
+By default Sponge delays purging of filtered command so you can always access the last 2 history entries. If you want to remove commands immediately or increase the delay, change `sponge_delay` variable:
 
 ```fish
 set sponge_delay 5
 ```
+
+### ⛔ Purge only on exit
+
+Sometimes you want to ignore `sponge_delay` variable and access the whole history of the current session. In such cases you can instruct Sponge to purge entries only on shell exit with `sponge_purge_only_on_exit` variable:
+
+```fish
+set sponge_purge_only_on_exit true
+```
+
+> 💡 Did you know you can change settings only for the current session? Just add `--global` flag when setting any variable and it won't be preserved after shell exit.
 
 ### 🤓 Custom filters
 
