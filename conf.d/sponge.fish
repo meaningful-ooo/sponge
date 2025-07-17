@@ -1,3 +1,5 @@
+status is-interactive || exit
+
 # Sponge version
 set --global sponge_version 1.1.0
 
